@@ -1,0 +1,131 @@
+tips 按顺序学习
+
+0. 英语阅读
+	1、http://coding-geek.com/how-databases-work/
+	2、https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html
+	3、https://wx.zsxq.com/dweb2/index/topic_detail/421825218815888
+	4、https://hakibenita.com/sql-for-data-analysis
+	5、https://stackoverflow.com/questions/15585602/change-limit-for-mysql-row-size-too-large
+	6、http://gee.cs.oswego.edu/dl/papers/aqs.pdf
+
+1. 操作系统
+	1、只需要把小林写的操作系统PDF，已放在 "操作系统" 文件夹
+	2、学习建议：从上往下看，不要跳着看，实在看不懂的可以先跳过，先大概过一遍，然后再细扣细节。
+	3、公众号：低并发编程
+	4、 MIT 6.S081 
+		https://mp.weixin.qq.com/s/NNRDSVHrnuAkqU1hjCFHDQ
+		https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/
+
+2. 计算机网络
+	1、只需要把小林写的计算机网络PDF，已放在 "计算机网络" 文件夹
+	2、学习建议：从上往下看，不要跳着看，实在看不懂的可以先跳过，先大概过一遍，然后再细扣细节。
+
+3.算法与数据结构
+	1、每天都要刷题，至少一道，保持手感。
+	2、可以按着此网站分类跟着刷http://www.cyc2018.xyz/
+	3、labuladong的算法小抄 https://labuladong.gitee.io/algo/
+	4、突击笔试计划 https://mp.weixin.qq.com/s/SZoTG4DFfhQgc4LbhwyjKw
+	5、公众号：面向大象编程，有介绍解题套路，比较通俗易懂
+	6、B站：郭郭wg,也是讲解解题套路的。
+	7、宫水三叶的刷题日记
+	8、B站：山景城一姐
+
+4. Java基础	
+	1、再见伐木机整理的问题 https://www.yuque.com/docs/share/228eda24-efc0-4e81-a725-87c24d420bcd
+	2、B站：寒食君
+	3、 AQS
+		https://www.javadoop.com/post/AbstractQueuedSynchronizer
+		https://mp.weixin.qq.com/s/RNSb6BdPsT38RBIrJucSaw
+		https://mp.weixin.qq.com/s/HEylBNG8-uIHrUwDFE8GYA
+		https://mp.weixin.qq.com/s/z0SVcjdxaoGp_MAEvjSD4g
+		https://mp.weixin.qq.com/s/k3LJTKAmS5rOh67LOIwh6A
+		https://mp.weixin.qq.com/s/sA01gxC4EbgypCsQt5pVog
+	4、幕布 https://www.mubucm.com/doc/3BUl4cuGlWG
+
+5.多线程
+	1、B站：寒食君
+	2、RedSpider社区介绍 http://concurrent.redspider.group/RedSpider.html
+	3、javadoop https://javadoop.com/
+	4、公日拱一兵的Java并发编程图册，已放在 "多线程" 文件夹
+
+6. MySQL
+	1、儒猿技术窝的<从零开始带你成为MySQL实战优化高手>，已放在 "MySQL" 文件夹
+	2、小孩子的掘金小册<从根上理解MySQL>
+	3、公众号：yes的练级攻略
+
+7. Redis
+	1、极客时间的<Redis核心技术与实战>,<Redis源码剖析与实战>
+	2、Kaito的公众号：水滴与银弹
+	3、Kaito整理的问题解答 https://www.yuque.com/docs/share/9677b389-1af5-4d22-805b-ee2d651100d9#RDB
+	4、redisson https://github.com/redisson/redisson/wiki
+	5、Redis分布式源码解析,已放在 "源码分析" 文件夹<儒猿-技术分享汇总>
+	6、公众号：字节码哥
+	7、鹏程的知识星球<Redis技术交流>
+
+8. JVM
+	1、B站：寒食君
+	2、儒猿技术窝的<从0开始带你成为JVM实战高手>，已放在 "JVM" 文件夹，
+
+9. RocketMQ
+	1、儒猿技术窝的<从零开始带你成为消息中间件实战高手>,已放在 "RocketMQ" 文件夹
+
+10. Spring
+	1、循环依赖 https://mp.weixin.qq.com/s/RBYGnwSlHRafc2BBUW7Rbg
+
+11. SpringBoot
+	1、自动装配 https://www.cnblogs.com/hhcode520/p/9450933.html
+
+12. SpringCloud
+
+13. Kafka
+
+14. 分布式高可用高并发
+	1、分库分表
+		看美团架构公众号的大众点评的分库分表架构演进
+	2、分布式系统
+		MIT 6.824
+			https://www.bilibili.com/video/BV1x7411M7Sf?p=26&share_source=copy_web
+
+15. 面试突击
+	1、JavaGuide https://snailclimb.gitee.io/javaguide-interview/
+	2、石杉的架构笔记 https://shishan100.gitee.io/docs/
+	3、沈剑的架构师之路 https://m.w3cschool.cn/architectroad/
+	4、Java3y整理的对线面试官 http://javainterview.gitee.io/luffy/
+	5、crossoverJie https://github.com/crossoverJie/JCSprout
+	6、公众号：三太子敖丙
+	7、儒猿技术窝面试突击第一季、第二季、第三季
+
+16. 源码分析
+	1、<儒猿-技术分享汇总>,已放在 "源码分析" 文件夹
+
+17. Dubbo
+	1、公众号：三太子敖丙
+
+18. Git
+	1、极客时间的<玩转Git三剑客>
+
+19. Zookeeper
+
+20. 其他优质资料
+	1、美团的博客 https://tech.meituan.com
+	2、凤凰架构 http://icyfenix.cn/
+
+21. 设计题 
+	1、幕布 https://www.mubucm.com/doc/2UuqNuMC3ga
+
+22. 书单
+	数学基础类
+		《程序员的数学》(结城浩) 
+	计组类
+		《计算机是怎样跑起来的》	
+		《程序是怎样跑起来的》(矢泽久雄) 
+	处理器类
+		《支撑处理器的技术-永无止境地追求速度的世界》(海撒安藤) 
+	GC类
+		《垃圾回收的算法与实现》
+		《JVM G1GC的算法与实现》(中村成洋) 
+	网络协议类
+		《图解TCP/IP》(竹下隆史等)
+		《图解HTTP》(上野宣) 
+	虚拟机解释器类		
+		《自制编程语言》(前桥和弥)
