@@ -19,6 +19,7 @@ tips 按顺序学习
 2. 计算机网络
 	1、只需要把小林写的计算机网络PDF，已放在 "计算机网络" 文件夹
 	2、学习建议：从上往下看，不要跳着看，实在看不懂的可以先跳过，先大概过一遍，然后再细扣细节。
+	3、掘金小册<深入理解TCP协议：从原理到实战>，已放在 "计算机网络" 文件夹
 
 3.算法与数据结构
 	1、每天都要刷题，至少一道，保持手感。
@@ -46,11 +47,12 @@ tips 按顺序学习
 	1、B站：寒食君
 	2、RedSpider社区介绍 http://concurrent.redspider.group/RedSpider.html
 	3、javadoop https://javadoop.com/
-	4、公日拱一兵的Java并发编程图册，已放在 "多线程" 文件夹
+	4、公日拱一兵的<Java并发编程图册>，已放在 "多线程" 文件夹
+	5、<由浅入深Java并发>，已放在 "多线程" 文件夹
 
 6. MySQL
 	1、儒猿技术窝的<从零开始带你成为MySQL实战优化高手>，已放在 "MySQL" 文件夹
-	2、小孩子的掘金小册<从根上理解MySQL>
+	2、小孩子的掘金小册<从根上理解MySQL>，已放在 "MySQL" 文件夹
 	3、公众号：yes的练级攻略
 
 7. Redis
@@ -61,32 +63,45 @@ tips 按顺序学习
 	5、Redis分布式源码解析,已放在 "源码分析" 文件夹<儒猿-技术分享汇总>
 	6、公众号：字节码哥
 	7、鹏程的知识星球<Redis技术交流>
+	8、掘金小册<Redis 深度历险：核心原理与应用实践>，已放在 "Redis" 文件夹
 
 8. JVM
 	1、B站：寒食君
-	2、儒猿技术窝的<从0开始带你成为JVM实战高手>，已放在 "JVM" 文件夹，
+	2、儒猿技术窝的<从0开始带你成为JVM实战高手>，已放在 "JVM" 文件夹
+	3、掘金小册<JVM字节码从入门到精通>，已放在 "JVM" 文件夹
 
 9. RocketMQ
 	1、儒猿技术窝的<从零开始带你成为消息中间件实战高手>,已放在 "RocketMQ" 文件夹
+    2、基于消息中间件的最终一致性(消息中间件事务消息机制)
+        https://www.processon.com/view/link/60ceac6ee0b34d050034ae3c
 
 10. Spring
 	1、循环依赖 https://mp.weixin.qq.com/s/RBYGnwSlHRafc2BBUW7Rbg
+	2、掘金小册<从0开始深入学习Spring>，已放在 "Spring" 文件夹
 
 11. SpringBoot
 	1、自动装配 https://www.cnblogs.com/hhcode520/p/9450933.html
+	2、掘金小册<SpringBoot源码解读与原理分析>，已放在 "SpringBoot" 文件夹
 
 12. SpringCloud
+    1、掘金小册<SpringCloudNetflix源码解读与原理分析>，已放在 "SpringCloud" 文件夹
 
 13. Kafka
+    1、掘金小册<图解Kafka之实战指南>，已放在 "Kafka" 文件夹
 
-14. 分布式高可用高并发
+14. Netty
+    1、掘金小册<Netty入门与实战：仿写微信IM即时通讯系统>，已放在 "Netty" 文件夹
+
+15. 分布式高可用高并发
 	1、分库分表
 		看美团架构公众号的大众点评的分库分表架构演进
 	2、分布式系统
 		MIT 6.824
 			https://www.bilibili.com/video/BV1x7411M7Sf?p=26&share_source=copy_web
+    3、分布式一致性
+        https://www.processon.com/view/link/60cc107ae0b34d55bbf0dd3d
 
-15. 面试突击
+16. 面试突击
 	1、JavaGuide https://snailclimb.gitee.io/javaguide-interview/
 	2、石杉的架构笔记 https://shishan100.gitee.io/docs/
 	3、沈剑的架构师之路 https://m.w3cschool.cn/architectroad/
@@ -95,25 +110,34 @@ tips 按顺序学习
 	6、公众号：三太子敖丙
 	7、儒猿技术窝面试突击第一季、第二季、第三季
 
-16. 源码分析
-	1、<儒猿-技术分享汇总>,已放在 "源码分析" 文件夹
+17. 源码分析
+	1、<儒猿-技术分享汇总>，已放在 "源码分析" 文件夹
 
-17. Dubbo
+18. Dubbo
 	1、公众号：三太子敖丙
 
-18. Git
+19. Git
 	1、极客时间的<玩转Git三剑客>
+	2、掘金小册<Git原理详解及实用指南>，已放在 "Git" 文件夹
 
-19. Zookeeper
+20. Zookeeper
 
-20. 其他优质资料
+21. 其他优质资料
 	1、美团的博客 https://tech.meituan.com
 	2、凤凰架构 http://icyfenix.cn/
+	3、【石杉的架构笔记】2019年原创汇总 https://mp.weixin.qq.com/s/XVSf5BM572V9mII5dZhs1Q
 
-21. 设计题 
+22. 设计题
 	1、幕布 https://www.mubucm.com/doc/2UuqNuMC3ga
+	2、⼤型电商系统-采购核⼼链路接⼝⼀致性保障，已放在 "设计题" 文件夹
 
-22. 书单
+23. 面经
+    1、面经已放在 "面经" 文件夹
+
+24. 公司真题汇总
+    1、公司真题汇总已放在 "公司真题汇总" 文件夹
+
+25. 书单
 	数学基础类
 		《程序员的数学》(结城浩) 
 	计组类
