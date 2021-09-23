@@ -1,5 +1,27 @@
 tips 按顺序学习
 
+大概总结下知识考点
+    1、基础部分：（主要都是原理+源码+使用）
+        CAS:定义，用法，产生的问题ABA，怎么解决ABA
+        AQS：定义，CLH队列，条件等待队列，waiteState的作用，怎么实现可重入
+        Volatile：定义，每个作用的具体实现（总线锁，缓存行锁，内存屏障），as-if-serial，happens-before 原则，8大原子操作
+        ReentrantLock，底层实现，引出condition
+        Synchronized（synchronized关键字在使用层面的理解，在字节码中的体现，在JVM中的实现，在JVM中的实现，在硬件方面的实现），对象头，锁升级
+        CountDownLatch/CyclicBarrier/Semaphore使用与源码
+        ThreadPoolExecutor7大参数，4大拒绝策略，还有阻塞队列
+        ScheduledThreadPoolExecutor,jmm，copyonwriteArrayList，blockingQueue，Automic类，unsafe，Future&ForkJoin，Disruptor，akka，ArrayList，TreeSet，HashMap，fail-fast与fail-safe，红黑树
+    2、JVM：
+        类加载机制，tomcat怎么破解类加载机制，gcroot，常见oom，四大引用，四大垃圾回收算法，cms的concurrent model failure、background & foreground collector ，增量更新+写屏障，G1的Remembered Set、Card Table、Collect Set、young gc和Mix GC的完整流程、SATB+写屏障、Marking bitmaps和TAMS、Pause Prediction Model，ZGC中的color poin，JVM的调优的各种参数，各种命令（例如100%cpu的排查、死锁的检查）以及常用的JVM的监测的工具(例如 Arthas 等等)，还能聊聊对象的分配过程（栈上分配）、JIT、逃逸分析
+    3、MySQL：
+        innodb索引底层，MVCC（底层），事务ACID（底层），sql优化，explain详解，BufferPool缓存机制，查询怎么执行，更新怎么执行，binlog，redolog以及各种log，mysql主从同步，mysql集群部署，mysql读写分离，你的mysql用什么隔离级别，一个事务是如何写入binlog和redolog的，讲一下过程
+    4、IO
+        BIO/NIO/AIO，NIO底层的实现，以及使用场景；如果能知道Netty，可以结合讲讲
+        零拷贝
+    5、spring：Spring-Aop的底层原理（开启注解的原理），如何实现的，为什么jdk代理要用接口（不要告诉我这是规范）、aop失效场景以及原因，spring是用哪个后置处理器完成aop的，aop与aspectj有什么关系，aop在spring中的流程（这个绝的可以加分，不要简单认为spring就实例化bean以后做aop这么简单）、Spring中如何设置aop暴露，aop的使用场景、如果你还能说说cglib底层用的asm，Ioc，生命周期，spring的 ConfigurationClassPostProcessor 干了一些什么事情（可以直接问穿，比如@configuration注解的底层、@Import三种情况的处理、spring如何解析bean的等等，什么你不知道这个类？）、Spring中的@Autowired和 @Resource（别告诉我什么bytype，一看就是百度的）、Spring中的循环依赖（为什么要这样设计）、Spring中的bean的创建流程、Spring中的生命周期的回调、Spring中的5个核心后置处理器都做了什么、说说Spring中的factorybean等等，@configuration加不加的区别，还有事务注解
+    6、springboot：Springboot中的watch机制springboot自动装配了解吗？Springboot启动流程，如何创建starter
+    7、分布式锁（zookeeper实现，redis实现，redission实现）
+    8、分布式事务
+
 0. 英语阅读
 	1、http://coding-geek.com/how-databases-work/
 	2、https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html
@@ -15,6 +37,8 @@ tips 按顺序学习
 	4、 MIT 6.S081 
 		https://mp.weixin.qq.com/s/NNRDSVHrnuAkqU1hjCFHDQ
 		https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/
+    5、mmap
+        https://mp.weixin.qq.com/s/MLQzOv2lFV_NL1tm5rAZ-w
 
 2. 计算机网络
 	1、小林写的计算机网络PDF，已放在 "计算机网络" 文件夹
@@ -58,6 +82,8 @@ tips 按顺序学习
 	3、公众号：yes的练级攻略
 	4、mysql的默认隔离级别为什么是RR
 	    https://www.cnblogs.com/shoshana-kong/p/10516404.html
+	5、为什么MySQL不建议delete删除数据
+        https://juejin.cn/post/6913695663028961293#heading-10
 
 7. Redis
 	1、极客时间的<Redis核心技术与实战>,<Redis源码剖析与实战>
@@ -97,22 +123,28 @@ tips 按顺序学习
 10. Spring
 	1、循环依赖 https://mp.weixin.qq.com/s/RBYGnwSlHRafc2BBUW7Rbg
 	2、掘金小册<从0开始深入学习Spring>，已放在 "Spring" 文件夹
+	3、spring bean 的生命周期
+	    https://www.processon.com/view/link/60bf2df5e0b34d0950a5d052
 
-11. SpringBoot
+11. Spring MVC
+    1、Spring MVC面试题
+        https://juejin.cn/post/6844904127059722253
+
+12. SpringBoot
 	1、自动装配 https://www.cnblogs.com/hhcode520/p/9450933.html
 	2、掘金小册<SpringBoot源码解读与原理分析>，已放在 "SpringBoot" 文件夹
 
-12. SpringCloud
+13. SpringCloud
     1、掘金小册<SpringCloudNetflix源码解读与原理分析>，已放在 "SpringCloud" 文件夹
     2、PDF<图解Feign源码-Feign是如何实现声明式调⽤的>，已放在 "SpringCloud" 文件夹
 
-13. Kafka
+14. Kafka
     1、掘金小册<图解Kafka之实战指南>，已放在 "Kafka" 文件夹
 
-14. Netty
+15. Netty
     1、掘金小册<Netty入门与实战：仿写微信IM即时通讯系统>，已放在 "Netty" 文件夹
 
-15. 分布式高可用高并发
+16. 分布式高可用高并发
 	1、分库分表
 		1.1 看美团架构公众号的大众点评的分库分表架构演进
 		1.2 说几个大厂分库分表的那点破事
@@ -124,7 +156,7 @@ tips 按顺序学习
         https://www.processon.com/view/link/60cc107ae0b34d55bbf0dd3d
 
 
-16. 面试突击
+17. 面试突击
 	1、JavaGuide https://snailclimb.gitee.io/javaguide-interview/
 	2、石杉的架构笔记 https://shishan100.gitee.io/docs/
 	3、沈剑的架构师之路 https://m.w3cschool.cn/architectroad/
@@ -133,24 +165,30 @@ tips 按顺序学习
 	6、公众号：三太子敖丙
 	7、儒猿技术窝面试突击第一季、第二季、第三季
 	8、艾小仙《我想进大厂》面试系列，已放在 "面试突击" 文件夹
+	9、sowhat1412 后端总结
+	    https://www.processon.com/view/5f389dbd5653bb06f2d00cbc
+	10、公众号：yes的练级攻略《面霸系列》
+	    https://mp.weixin.qq.com/s/4L_sPXYPxeu6Dnu_pCobmw
 
-17. 源码分析
+18. 源码分析
 	1、<儒猿-技术分享汇总>，已放在 "源码分析" 文件夹
 
-18. Dubbo
+19. Dubbo
 	1、公众号：三太子敖丙
 
-19. Git
+20. Git
 	1、极客时间的<玩转Git三剑客>
 	2、掘金小册<Git原理详解及实用指南>，已放在 "Git" 文件夹
 
-20. Zookeeper
+21. Zookeeper
 
-21. Linux
+22. Linux
     1、Linux 异步 I/O 框架 io_uring
         http://arthurchiao.art/blog/intro-to-io-uring-zh/?continueFlag=ec594e86b942d37e4554c8febf90b65f
+    2、深入剖析Linux IO原理和几种零拷贝机制的实现
+        https://zhuanlan.zhihu.com/p/83398714
 
-22. 其他优质资料
+23. 其他优质资料
 	1、美团的博客
 	    https://tech.meituan.com
 	2、凤凰架构
@@ -167,7 +205,7 @@ tips 按顺序学习
     8、https://geektutu.com/
 
 
-23. 设计题
+24. 设计题
 	1、幕布 https://www.mubucm.com/doc/2UuqNuMC3ga
 	2、⼤型电商系统-采购核⼼链路接⼝⼀致性保障，已放在 "设计题" 文件夹
 	3、扫码登录原理
@@ -184,7 +222,7 @@ tips 按顺序学习
     8、30G如何快速全部导入到数据库
         https://mp.weixin.qq.com/s/_GSq-UXnDhgG6k0qHqM-6A
 
-24. 调优专题
+25. 调优专题
     1、线上故障如何快速排查？来看这套技巧大全
         https://mp.weixin.qq.com/s/BXtr0IFMY7Azh9820DqZhQ
     2、性能优化高频面试题集锦
@@ -194,21 +232,25 @@ tips 按顺序学习
     4、面试官问我遇到过线上问题没有？我该怎么回答
         https://mp.weixin.qq.com/s/T6Fymqkp8hbGNcPqanFvdg
     5、武哥的PDF<漫谈线上问题排查>,已放在 "调优专题" 文件夹
+    6、工作中遇到的问题，并且怎么排查解决的。
+        案例分享
+        6.1 https://mp.weixin.qq.com/s/dsXs3cY4melbjWABA1Qxfw
 
-25. 面经
+26. 面经
     1、面经已放在 "面经" 文件夹
 
-26. 公司真题汇总
+27. 公司真题汇总
     1、公司真题汇总已放在 "公司真题汇总" 文件夹
+    2、https://www.nowcoder.com/discuss/663962?type=all&order=time&pos=&page=1&channel=-1&source_id=search_all_nctrack
 
-27. 简历模版
+28. 简历模版
     1、https://www.wondercv.com/jianlimoban/8453804014b18b60.html
 
-28. go
+29. go
     1、Golang 中文学习资料
         http://go.wuhaolin.cn/
 
-28. 书单
+30. 书单
 	数学基础类
 		《程序员的数学》(结城浩) 
 	计组类
