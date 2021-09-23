@@ -85,6 +85,7 @@ tips 按顺序学习
 
 12. SpringCloud
     1、掘金小册<SpringCloudNetflix源码解读与原理分析>，已放在 "SpringCloud" 文件夹
+    2、PDF<图解Feign源码-Feign是如何实现声明式调⽤的>，已放在 "SpringCloud" 文件夹
 
 13. Kafka
     1、掘金小册<图解Kafka之实战指南>，已放在 "Kafka" 文件夹
