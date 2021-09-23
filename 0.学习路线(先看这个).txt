@@ -4,7 +4,7 @@ tips 按顺序学习
     1、基础部分：（主要都是原理+源码+使用）
         CAS:定义，用法，产生的问题ABA，怎么解决ABA
         AQS：定义，CLH队列，条件等待队列，waiteState的作用，怎么实现可重入
-        Volatile：定义，每个作用的具体实现（总线锁，缓存行锁，内存屏障），as-if-serial，happens-before 原则，8大原子操作
+        Volatile：定义，每个作用的具体实现（总线锁，缓存行锁，内存屏障），as-if-serial，happens-before 原则，8大原子操作，MESI协议
         ReentrantLock，底层实现，引出condition
         Synchronized（synchronized关键字在使用层面的理解，在字节码中的体现，在JVM中的实现，在JVM中的实现，在硬件方面的实现），对象头，锁升级
         CountDownLatch/CyclicBarrier/Semaphore使用与源码
@@ -14,13 +14,30 @@ tips 按顺序学习
         类加载机制，tomcat怎么破解类加载机制，gcroot，常见oom，四大引用，四大垃圾回收算法，cms的concurrent model failure、background & foreground collector ，增量更新+写屏障，G1的Remembered Set、Card Table、Collect Set、young gc和Mix GC的完整流程、SATB+写屏障、Marking bitmaps和TAMS、Pause Prediction Model，ZGC中的color poin，JVM的调优的各种参数，各种命令（例如100%cpu的排查、死锁的检查）以及常用的JVM的监测的工具(例如 Arthas 等等)，还能聊聊对象的分配过程（栈上分配）、JIT、逃逸分析
     3、MySQL：
         innodb索引底层，MVCC（底层），事务ACID（底层），sql优化，explain详解，BufferPool缓存机制，查询怎么执行，更新怎么执行，binlog，redolog以及各种log，mysql主从同步，mysql集群部署，mysql读写分离，你的mysql用什么隔离级别，一个事务是如何写入binlog和redolog的，讲一下过程
-    4、IO
-        BIO/NIO/AIO，NIO底层的实现，以及使用场景；如果能知道Netty，可以结合讲讲
+    4、网络
+        BIO/NIO/AIO，NIO底层的实现，以及使用场景；如果能知道Netty，可以结合讲讲（netty源码学习 比如NioEventLoopGroup的创建 NioEventLoop线程什么适合启动,nioServerSocketChannel监听到accept事件后怎么去处理连接,pipeline,bytebuf内存池等）
         零拷贝
+        网络七层模型 tcp/ip http https
+        dns cdn
     5、spring：Spring-Aop的底层原理（开启注解的原理），如何实现的，为什么jdk代理要用接口（不要告诉我这是规范）、aop失效场景以及原因，spring是用哪个后置处理器完成aop的，aop与aspectj有什么关系，aop在spring中的流程（这个绝的可以加分，不要简单认为spring就实例化bean以后做aop这么简单）、Spring中如何设置aop暴露，aop的使用场景、如果你还能说说cglib底层用的asm，Ioc，生命周期，spring的 ConfigurationClassPostProcessor 干了一些什么事情（可以直接问穿，比如@configuration注解的底层、@Import三种情况的处理、spring如何解析bean的等等，什么你不知道这个类？）、Spring中的@Autowired和 @Resource（别告诉我什么bytype，一看就是百度的）、Spring中的循环依赖（为什么要这样设计）、Spring中的bean的创建流程、Spring中的生命周期的回调、Spring中的5个核心后置处理器都做了什么、说说Spring中的factorybean等等，@configuration加不加的区别，还有事务注解
     6、springboot：Springboot中的watch机制springboot自动装配了解吗？Springboot启动流程，如何创建starter
-    7、分布式锁（zookeeper实现，redis实现，redission实现）
-    8、分布式事务
+    7、springcloud的组件 eureka ribbon feign hystrix zuul 源码学习,也可以去看springcloud alibaba这一套大同小异
+    8、分布式锁（zookeeper实现，redis实现，redission实现）
+        8.1 zk的简单版本分布式锁和zk的顺序节点 基于顺序临时节点和watch监听pre前驱节点
+        8.2 redis分布式锁 set nx ex ,删除lua交给get+del  readLock  redisson 基于看门狗的锁续约  读写锁
+    9、分布式事务
+         8.1 2pc atomikos框架源码
+         8.2 tcc byteTcc源码
+         8.3 可靠消息服务
+         8.4 本地消息表
+         8.5 最大努力通知
+    10. 笔记和复习
+        10.1 第一遍主要是看资料学习,记录一下重点的知识点
+        10.2 第二遍自己写demo然后看源码画流程图
+        10.3 第三遍总结笔记
+        10.4 第四遍第二天早上可以默写出执行的流程
+        10.5 第五遍实战项目应用(比较主要项目建议敲两遍)
+        10.6 第六遍跟看过的人交流或没看过的人,让你自己描述的东西能让别人听懂并能回答他问的问题
 
 0. 英语阅读
 	1、http://coding-geek.com/how-databases-work/
@@ -54,6 +71,7 @@ tips 按顺序学习
 	6、B站：郭郭wg,也是讲解解题套路的。
 	7、宫水三叶的刷题日记
 	8、B站：山景城一姐
+	9、极客时间王争的<数据结构之美>
 
 4. Java基础	
 	1、再见伐木机整理的问题 https://www.yuque.com/docs/share/228eda24-efc0-4e81-a725-87c24d420bcd
@@ -75,6 +93,7 @@ tips 按顺序学习
 	3、javadoop https://javadoop.com/
 	4、公日拱一兵的<Java并发编程图册>，已放在 "多线程" 文件夹
 	5、<由浅入深Java并发>，已放在 "多线程" 文件夹
+	6、书籍<java并发编程的艺术>
 
 6. MySQL
 	1、儒猿技术窝的<从零开始带你成为MySQL实战优化高手>，已放在 "MySQL" 文件夹
@@ -84,6 +103,7 @@ tips 按顺序学习
 	    https://www.cnblogs.com/shoshana-kong/p/10516404.html
 	5、为什么MySQL不建议delete删除数据
         https://juejin.cn/post/6913695663028961293#heading-10
+    6、极客时间<MySQL45讲>
 
 7. Redis
 	1、极客时间的<Redis核心技术与实战>,<Redis源码剖析与实战>
@@ -94,6 +114,7 @@ tips 按顺序学习
 	6、公众号：字节码哥
 	7、鹏程的知识星球<Redis技术交流>
 	8、掘金小册<Redis 深度历险：核心原理与应用实践>，已放在 "Redis" 文件夹
+	9、书籍<redis设计与实现>
 
 8. JVM
 	1、B站：寒食君
@@ -169,6 +190,8 @@ tips 按顺序学习
 	    https://www.processon.com/view/5f389dbd5653bb06f2d00cbc
 	10、公众号：yes的练级攻略《面霸系列》
 	    https://mp.weixin.qq.com/s/4L_sPXYPxeu6Dnu_pCobmw
+	11、该git仓库内容为从牛客网爬取的社招面经归类的大厂Java面试题
+	    https://github.com/zhendiao/JavaInterview
 
 18. 源码分析
 	1、<儒猿-技术分享汇总>，已放在 "源码分析" 文件夹
@@ -188,7 +211,12 @@ tips 按顺序学习
     2、深入剖析Linux IO原理和几种零拷贝机制的实现
         https://zhuanlan.zhihu.com/p/83398714
 
-23. 其他优质资料
+23. 设计模式
+    1、极客时间王争的<设计模式之美>
+
+24. tomcat
+
+25. 其他优质资料
 	1、美团的博客
 	    https://tech.meituan.com
 	2、凤凰架构
@@ -205,7 +233,7 @@ tips 按顺序学习
     8、https://geektutu.com/
 
 
-24. 设计题
+26. 设计题
 	1、幕布 https://www.mubucm.com/doc/2UuqNuMC3ga
 	2、⼤型电商系统-采购核⼼链路接⼝⼀致性保障，已放在 "设计题" 文件夹
 	3、扫码登录原理
@@ -221,8 +249,12 @@ tips 按顺序学习
         https://mp.weixin.qq.com/s/Kc4W8RTcjhMSVfUWCvaTDw
     8、30G如何快速全部导入到数据库
         https://mp.weixin.qq.com/s/_GSq-UXnDhgG6k0qHqM-6A
+    9、打赏排行榜实现
+    10、短链系统设计
+    11、附近的人项目实现
+    12、10w个红包秒级发送方案
 
-25. 调优专题
+27. 调优专题
     1、线上故障如何快速排查？来看这套技巧大全
         https://mp.weixin.qq.com/s/BXtr0IFMY7Azh9820DqZhQ
     2、性能优化高频面试题集锦
@@ -236,21 +268,22 @@ tips 按顺序学习
         案例分享
         6.1 https://mp.weixin.qq.com/s/dsXs3cY4melbjWABA1Qxfw
 
-26. 面经
+28. 面经
     1、面经已放在 "面经" 文件夹
+    2、https://note.youdao.com/ynoteshare/index.html?id=b5d88aaa99f13deefd4d7c95c471577f&type=note&_time=1632388151222
 
-27. 公司真题汇总
+29. 公司真题汇总
     1、公司真题汇总已放在 "公司真题汇总" 文件夹
     2、https://www.nowcoder.com/discuss/663962?type=all&order=time&pos=&page=1&channel=-1&source_id=search_all_nctrack
 
-28. 简历模版
+30. 简历模版
     1、https://www.wondercv.com/jianlimoban/8453804014b18b60.html
 
-29. go
+31. go
     1、Golang 中文学习资料
         http://go.wuhaolin.cn/
 
-30. 书单
+32. 书单
 	数学基础类
 		《程序员的数学》(结城浩) 
 	计组类
