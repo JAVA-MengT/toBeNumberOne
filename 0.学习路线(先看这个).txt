@@ -42,6 +42,8 @@ tips 按顺序学习
 		https://mp.weixin.qq.com/s/k3LJTKAmS5rOh67LOIwh6A
 		https://mp.weixin.qq.com/s/sA01gxC4EbgypCsQt5pVog
 	4、幕布 https://www.mubucm.com/doc/3BUl4cuGlWG
+	5、ConcurrentHashMap
+	    5.1 https://mp.weixin.qq.com/s/UXV34hYMHwsFBe9AQCZvLg
 
 5.多线程
 	1、B站：寒食君
@@ -54,6 +56,8 @@ tips 按顺序学习
 	1、儒猿技术窝的<从零开始带你成为MySQL实战优化高手>，已放在 "MySQL" 文件夹
 	2、小孩子的掘金小册<从根上理解MySQL>，已放在 "MySQL" 文件夹
 	3、公众号：yes的练级攻略
+	4、mysql的默认隔离级别为什么是RR
+	    https://www.cnblogs.com/shoshana-kong/p/10516404.html
 
 7. Redis
 	1、极客时间的<Redis核心技术与实战>,<Redis源码剖析与实战>
@@ -69,6 +73,21 @@ tips 按顺序学习
 	1、B站：寒食君
 	2、儒猿技术窝的<从0开始带你成为JVM实战高手>，已放在 "JVM" 文件夹
 	3、掘金小册<JVM字节码从入门到精通>，已放在 "JVM" 文件夹
+	4、JVM知识全景图
+	    https://www.processon.com/view/5f93d20763768906e68676d4
+	5、图片<JVM底层各部分原理>，已放在 "JVM" 文件夹
+	6、JVM案例
+	    https://www.processon.com/view/link/5da833dae4b0ece757d17ecc
+	7、JVM参数设置
+	    https://www.processon.com/view/link/5da093f3e4b0ea86c2a9bbb3
+	8、JVM常见垃圾回收器
+	    https://www.processon.com/view/link/5d9d3c33e4b07a0a4d51b145
+    9、JVM如何运行起来以及类加载机制
+        https://www.processon.com/view/link/5d9de711e4b042e60d6282c8
+    10、JVM手动实验
+        https://www.processon.com/view/link/5d9e9387e4b0c55535eaf572
+    11、谈谈JVM内部锁升级过程
+        https://mp.weixin.qq.com/s/2yxexZUr5MWdMZ02GCSwdA
 
 9. RocketMQ
 	1、儒猿技术窝的<从零开始带你成为消息中间件实战高手>,已放在 "RocketMQ" 文件夹
@@ -95,12 +114,15 @@ tips 按顺序学习
 
 15. 分布式高可用高并发
 	1、分库分表
-		看美团架构公众号的大众点评的分库分表架构演进
+		1.1 看美团架构公众号的大众点评的分库分表架构演进
+		1.2 说几个大厂分库分表的那点破事
+		    https://mp.weixin.qq.com/s/MOiYnvrj3CyEeEqMpMZA_A
 	2、分布式系统
 		MIT 6.824
 			https://www.bilibili.com/video/BV1x7411M7Sf?p=26&share_source=copy_web
     3、分布式一致性
         https://www.processon.com/view/link/60cc107ae0b34d55bbf0dd3d
+
 
 16. 面试突击
 	1、JavaGuide https://snailclimb.gitee.io/javaguide-interview/
@@ -110,6 +132,7 @@ tips 按顺序学习
 	5、crossoverJie https://github.com/crossoverJie/JCSprout
 	6、公众号：三太子敖丙
 	7、儒猿技术窝面试突击第一季、第二季、第三季
+	8、艾小仙《我想进大厂》面试系列，已放在 "面试突击" 文件夹
 
 17. 源码分析
 	1、<儒猿-技术分享汇总>，已放在 "源码分析" 文件夹
@@ -123,22 +146,69 @@ tips 按顺序学习
 
 20. Zookeeper
 
-21. 其他优质资料
-	1、美团的博客 https://tech.meituan.com
-	2、凤凰架构 http://icyfenix.cn/
-	3、【石杉的架构笔记】2019年原创汇总 https://mp.weixin.qq.com/s/XVSf5BM572V9mII5dZhs1Q
+21. Linux
+    1、Linux 异步 I/O 框架 io_uring
+        http://arthurchiao.art/blog/intro-to-io-uring-zh/?continueFlag=ec594e86b942d37e4554c8febf90b65f
 
-22. 设计题
+22. 其他优质资料
+	1、美团的博客
+	    https://tech.meituan.com
+	2、凤凰架构
+	    http://icyfenix.cn/
+	3、【石杉的架构笔记】2019年原创汇总
+	    https://mp.weixin.qq.com/s/XVSf5BM572V9mII5dZhs1Q
+	4、ARTHURCHIAO'S BLOG
+	    http://arthurchiao.art/
+	5、计算机科学概览课程（比较系统的计算机科学概览课程，在油管上非常火爆的计算机科学入门课程，累积千万播放，能够帮助我们在脑海中建立完整的计算机学科体系）
+	    Github：https://github.com/1c7/Crash-Course-Computer-Science-Chinese
+        Bilibili：https://www.bilibili.com/video/av21376839
+    6、https://github.com/dreamingyin/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md
+    7、https://www.flysnow.org/
+    8、https://geektutu.com/
+
+
+23. 设计题
 	1、幕布 https://www.mubucm.com/doc/2UuqNuMC3ga
 	2、⼤型电商系统-采购核⼼链路接⼝⼀致性保障，已放在 "设计题" 文件夹
+	3、扫码登录原理
+	    https://mp.weixin.qq.com/s/QZR3X4_5TtEYJOenlORumA
+	4、如何设计百万人抽奖系统
+	    https://mp.weixin.qq.com/s/4OqYCnEV3xTmXYGT2w7ltg
+	    https://mp.weixin.qq.com/s/LNqMbTWcbaa0Bz_NI6OkpA
+	5、设计一个可拔插的 IOC 容器
+	    https://mp.weixin.qq.com/s/j0qLxrWvcvBRIhdeqfIeZQ
+	6、如何设计一个百万级的消息推送系统
+        https://mp.weixin.qq.com/s/wCbBKCR2CIKAOMdBsoj2pQ
+    7、如何设计一个电商平台积分兑换系统
+        https://mp.weixin.qq.com/s/Kc4W8RTcjhMSVfUWCvaTDw
+    8、30G如何快速全部导入到数据库
+        https://mp.weixin.qq.com/s/_GSq-UXnDhgG6k0qHqM-6A
 
-23. 面经
+24. 调优专题
+    1、线上故障如何快速排查？来看这套技巧大全
+        https://mp.weixin.qq.com/s/BXtr0IFMY7Azh9820DqZhQ
+    2、性能优化高频面试题集锦
+        https://smartan123.github.io/book/?file=001-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/001-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E9%9D%A2%E8%AF%95%E9%A2%98%E9%9B%86%E9%94%A6
+    3、NIO优化原理和Tomcat线程模型
+        https://segmentfault.com/a/1190000024540660
+    4、面试官问我遇到过线上问题没有？我该怎么回答
+        https://mp.weixin.qq.com/s/T6Fymqkp8hbGNcPqanFvdg
+    5、武哥的PDF<漫谈线上问题排查>,已放在 "调优专题" 文件夹
+
+25. 面经
     1、面经已放在 "面经" 文件夹
 
-24. 公司真题汇总
+26. 公司真题汇总
     1、公司真题汇总已放在 "公司真题汇总" 文件夹
 
-25. 书单
+27. 简历模版
+    1、https://www.wondercv.com/jianlimoban/8453804014b18b60.html
+
+28. go
+    1、Golang 中文学习资料
+        http://go.wuhaolin.cn/
+
+28. 书单
 	数学基础类
 		《程序员的数学》(结城浩) 
 	计组类
